@@ -1,0 +1,19 @@
+---
+- name: Ensure /opt/devops exists and has info.txt
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Create /opt/devops directory
+      file:
+        path: /opt/devops
+        state: directory
+        owner: ec2-user
+
+    - name: Create info.txt with message
+      copy:
+        dest: /opt/devops/info.txt
+        content: "Hello from Ansible!"
+        owner: ec2-user
+...
+
