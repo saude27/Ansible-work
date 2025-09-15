@@ -5,18 +5,13 @@
 
   tasks:
     - name: install Apache2
-      yum:
-        name: httpd
+      apt:
+        name: apache2
         state: present
 
-    - name: start httpd
+    - name: start apache2
       service:
-        name: httpd
-        state: started
-
-    - name: install httpd
-      service:
-        name: httpd
-        enabled: yes 
+        name: apache2
+        enabled: yes
 ...
 

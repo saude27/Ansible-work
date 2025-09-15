@@ -14,7 +14,7 @@
         name: httpd
         state: started
 
-    - name: install httpd
+    - name: Enable httpd
       service:
         name: httpd
         enabled: yes 
