@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server Info</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Server Operating System: {{ ansible_distribution }}</h1>
+    <h1>The Server Hostname: {{ ansible_hostname }}</h1>
+</body>
+</html>

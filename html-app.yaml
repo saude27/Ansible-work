@@ -1,0 +1,11 @@
+---
+- name: Deploy web server
+  hosts: n2
+  become: yes
+
+  roles:
+  - apache
+  - html
+  
+...
+
