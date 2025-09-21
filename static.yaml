@@ -4,7 +4,7 @@
   become: yes
   
   tasks:
-    - name: update maintenance
+    - name: update static
       copy:
         src: static.html
         dest: /var/www/html/static.html
